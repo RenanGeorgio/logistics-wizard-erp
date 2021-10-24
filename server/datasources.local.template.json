@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "cloudant",
+    "url": "https://username:password@host",
+    "database": "logistics-wizard",
+    "plugin": "retry",
+    "retryAttempts": 20,
+    "retryTimeout": 1000
+  }
+}

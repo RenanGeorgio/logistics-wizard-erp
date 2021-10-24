@@ -1,0 +1,6 @@
+---
+services:
+  - dev-logistics-wizard-erp-db
+applications:
+  - name: dev-logistics-wizard-erp
+    memory: 256M

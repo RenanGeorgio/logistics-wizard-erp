@@ -1,0 +1,30 @@
+{
+  "name": "Demo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strictDelete": "true",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "createdAt": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    },
+    "guid": {
+      "type": "string",
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "hasMany",
+      "model": "ERPUser",
+      "foreignKey": "demoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
